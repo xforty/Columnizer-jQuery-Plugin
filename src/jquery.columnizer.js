@@ -166,7 +166,12 @@
 			if($pullOutHere.children().length){
 				$cloneMe = $pullOutHere.children(":first");
 				$clone = $cloneMe.clone(true);
-				if($clone.prop("nodeType") == 1 && !$clone.hasClass("dontend")){ 
+				if ($().jquery.match(/1\.[1-5]\..+/)) {
+					var nodeType = $clone.attr("nodeType");
+				} else {
+					var nodeType = $clone.prop("nodeType");
+				}
+				if(nodeType == 1 && !$clone.hasClass("dontend")){ 
 					$putInHere.append($clone);
 					if($clone.is("img") && $parentColumn.height() < height + 20){
 						$cloneMe.remove();
