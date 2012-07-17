@@ -4,9 +4,7 @@ rm -rf columnizer
 rm columnizer.zip
 
 mkdir columnizer
-cp jquery*.js columnizer/
-cp *.jpg columnizer/
-cp *.html columnizer/
+cp jquery.columnizer*.js columnizer/
 
 zip columnizer columnizer/*
 
