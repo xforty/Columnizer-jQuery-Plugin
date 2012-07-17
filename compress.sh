@@ -6,7 +6,7 @@ rm -rf "$PROJNAME"
 rm "$PROJNAME".zip
 
 mkdir "$PROJNAME"
-cp jquery.columnizer*.js "$PROJNAME"/
+cp README jquery.columnizer*.js "$PROJNAME"/
 
 zip "$PROJNAME" "$PROJNAME"/*
 
