@@ -1,10 +1,12 @@
 php compress.php
 
-rm -rf columnizer
-rm columnizer.zip
+PROJNAME=Columnizer-jQuery-Plugin
 
-mkdir columnizer
-cp jquery.columnizer*.js columnizer/
+rm -rf "$PROJNAME"
+rm "$PROJNAME".zip
 
-zip columnizer columnizer/*
+mkdir "$PROJNAME"
+cp jquery.columnizer*.js "$PROJNAME"/
+
+zip "$PROJNAME" "$PROJNAME"/*
 
